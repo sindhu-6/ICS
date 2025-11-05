@@ -1,0 +1,53 @@
+1. cd/var/www/html
+2. ls
+3. sudo rm -rf dvma
+4. ls
+5. sudo git clone https://github.com/digininja/dvwa.git
+6. sudo mv DVWA dvwa
+7. ls
+8. chmod -R 777 dvwa
+9. cd dvwa/config
+10. sudo cp config.inc.php.dist config.inc.php
+11. sudo nano config.inc.php
+    |___ user name, password   ctrl+o, ctrl+X
+12. sudo systemctl restart MySQL
+13. sudo server masql start
+14. sudo MySQL -u root -p
+   |___  enter password :  kali
+15. show databases;
+16. drop database dvwa; 
+17. create database dvwa;
+18. drop user 'admin'@127.0.0.1;
+19. create user 'admin'@127.0.0.1 identified by 'password';
+20. select user,Host FROM mysql.user WHERE user='admin' AND Host='127.0.01';
+21. grant all priviliges on dvwa.*to 'admin'@127.0.0.1' identified by 'password';
+22. show databases;
+23. exit;
+24. cd
+25. cd
+26. cd
+27. cd
+28. cd
+29.cd/etc/php
+30. ls
+31. cd 8.4/apache2
+32. ls
+35. sudo nano php.ini
+     |____ ctrl+f , fopen----allow_url_fopen_on
+                     include _on
+         ctrl+o,ctrl+x
+36. sudo server apache2 start
+37. https://127.0.0.1/dvwa/
+------------------------------------
+login
+admin
+password 
+   |_ not now
+reset
+|_retype admin and password
+|_not noe
+|_sql injection
+  |_type 1.
+-----------------------------------------
+. ---xss(reflected)____name....submit
+-----34. csrf ____login

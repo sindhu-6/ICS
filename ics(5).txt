@@ -1,0 +1,17 @@
+1. ifconfig
+2. ipconfig
+3. ping kali_ip_address
+4. ping window_ip_address
+ ----to block ping pakets 
+5. sudo iptables -A INPUT -s window_ip_address -j DROP
+|___-ping kali_ip_address
+----- to unblock ping packets
+6. sudo iptables -D INPUT -s window_ip_address -j DROP
+    |____ ping kali_ip_address
+7.sudo server apache2 start
+     |_________ password : kali
+8. sudo server mysql start
+----to block port number
+9. sudo iptables -A INPUT -s windows_ip_address -p tcp destination_port 80 -j DROP
+------ to block port 80
+10. sudo iptables -D INPUT -s windows_ip_address -p tcp destination_port 80 -j DROP
