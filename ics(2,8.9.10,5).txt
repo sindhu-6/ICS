@@ -40,6 +40,19 @@ step 7: take the path from exlaoit and paste it in msf console
       |_____exploit
       |_____ls
 -----------------------------------------------------------------------------------------------
+6)
+step 1: connect tp link with powersupply and lan connection.
+step 2: press window+R and type ncpa.cpl to change the setting of network
+step 3: right clink o ethernet then click on proporties then click on ipv4 to change or enable  the settings
+step 4: enable ip address and DNS
+step 5: connect to wifi of router to desktop as wee as phone
+    using mac address
+find mac address 
+step 6 : open tplink (address) server and type 192.168.0.1
+step 7: login into tplink with password
+step 8: go to securinty option then click on ip&mac address binding
+step 9: take any device click on ding
+-----------------------------------------------------------------------------------------------------
 5) 
 step 1: window : ipconfig  (window ip address)
 step 2: go to kali terminal ifconfig  (kali ip address)
@@ -62,6 +75,7 @@ step 8: touch exploit.py
 step 9: python exploit.py  (pip install pycrypto)
 step 10:openssl rsautl -decrypt -in encryptedFile -out decryptedFileName -inkey privateKey.pem
 step 11: Execute exploit.py file
+
 
 
 
