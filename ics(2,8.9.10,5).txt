@@ -54,15 +54,16 @@ step 6: now open new browser in google search any thing it shows reload page.
 step1 : mkdir rsa
 step 2: cd rsa
 step 3: ls
-step 4: cat enc.txt---*
+step 4: cat enc.txt---*  (exploit.ph) (pubkey.pem)
  step 5: cat pubkey.pem
-step 6: openssl rsa -public -inform PEM -text -noout <pubkey.pem   (copy module ) (exponent e)
+step 6: openssl rsa -pubin -inform PEM -text -noout < pubkey.pem   (copy module ) (exponent e)
 step 7: browser type hexa to decimal converter paste the module. click on module  copy the decimal code ( n) 
 step 8: touch exploit.py
-step 9: python exploit.py  (pip install pycryptodemo)
-step 10: openssl pkeyuh -decrypt -in key private.pem in  enc.txt -out dec.bin
-step 11: cat dec.bin
-Execute exploit.py file
+step 9: python exploit.py  (pip install pycrypto)
+step 10:openssl rsautl -decrypt -in encryptedFile -out decryptedFileName -inkey privateKey.pem
+step 11: Execute exploit.py file
+
+
 
 
 
