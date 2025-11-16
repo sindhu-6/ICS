@@ -1,6 +1,6 @@
 1. cd/var/www/html
 2. ls
-3. sudo rm -rf dvma
+3. sudo rm -rf dvwa
 4. ls
 5. sudo git clone https://github.com/digininja/dvwa.git
 6. sudo mv DVWA dvwa
@@ -51,3 +51,4 @@ reset
 -----------------------------------------
 . ---xss(reflected)____name....submit
 -----34. csrf ____login
+
